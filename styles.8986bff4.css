@@ -1,0 +1,347 @@
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 16px;
+	background-color: #f5f8fa;
+	color: rgb(5, 0, 0);
+    height: 100%;
+}
+
+*, *::after, *::before { 
+	-webkit-box-sizing: inherit; 
+	        box-sizing: inherit;
+	margin: 0; 
+	padding: 0;
+	font-size: 1rem;
+}
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+.portada{
+    background: url("/japon.88bbcbe6.png") no-repeat center;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.item a{
+    font-size:1.2rem;
+    color:rgb(5, 0, 0);
+}
+.item a:hover{
+    color: #FFF; 
+    opacity: 1;
+    }
+.portada figure{
+    width:30%;
+    max-width: 30%;
+    margin:0;
+}
+main{max-width: 1200px;}
+h1, h2, h3, h4{text-align: center;}
+a { color: #ff0000;
+    text-decoration: none; 
+}
+a:hover { color:#ff0000;
+        opacity: 0.5; 
+    }
+img {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+iframe{
+    width: 18rem;
+    height: 10rem;
+    margin:auto;
+    display: block;
+}
+.imgcategoria {height: 14rem;}
+.imgcategoria:hover{opacity: 0.5;}
+figure{
+    width: 70%;
+    max-width: 70%;
+    margin:auto;
+}
+figcaption{text-align: center;}
+figcaption a{text-align: center;}
+
+
+h1 { font-size: 2rem; }
+
+h2 { font-size: 1.5rem; }
+
+li {
+	margin-left: 1rem;
+	list-style-type: inherit;
+	list-style-position: inside;
+}
+
+header{
+    width: 100%;
+    background-color: azure;
+    text-align: center;
+    background-color: magenta;
+    overflow-x: hidden;
+}
+header a{
+    color:rgb(5, 0, 0);
+    font-size: 1.2rem;
+}
+header figure{
+    width: 10%;
+    margin:0;
+    display: inline-block;
+}
+nav{
+    text-align: center;
+    width: auto;
+    height: auto;
+    font-size: 0;
+}
+p, ul, ol{margin: 1rem 2rem;}
+p{
+    text-align: left;
+}
+
+.navegacionapoyo{
+    /*position: sticky;*/
+    top:0rem;
+}
+.navegacionapoyo ul{
+    display: inline-block;
+    border-bottom: thin solid rgb(5, 0, 0);
+    text-align: center;
+}
+.navegacionapoyo li{
+    float: left;
+    list-style: none;
+    text-align: center;
+}
+/*
+.navbar {
+    position: sticky;
+    top: 0px;
+    border-bottom: thin solid rgb(5, 0, 0);
+    text-align: center;
+    margin:0;
+}
+
+.navbar a{
+    display: block;
+    float: left;
+    margin: 0.5rem;
+}
+*/
+#horaJapon p{
+    font-size: 1.5rem;
+}
+footer {
+    background-color: black;
+}
+form{
+    width: 60%;
+    margin:auto;
+}
+form div{
+    margin: 0.5rem 0.5rem;
+}
+#correo{width: 75%;}
+button{
+    margin:.25rem .5rem;
+    border-radius: 0 .5;
+    padding: .25rem .5rem;
+    background-color: #ff0000;
+}
+footer p{
+    text-align: center;
+    color:#FFF;
+    font-size: 0.8rem;
+}
+footer a{
+    color:#FFF;
+}
+footer a:hover{color:#ff0000;}
+footer figure{
+    width: 5%;
+    max-width: 5%;}
+
+/*  Empiezan las media queries */
+@media screen and (min-width: 20em){
+    header{
+        background-color: blue;
+    }
+    footer p{font-size:0.9rem;}
+    .item a{ font-size:1.3rem; }
+    #correo{width: 90%;}
+}
+
+@media screen and (min-width: 30em){
+    header{
+        background-color: green;
+    }
+    .imgcategoria {height: 18rem;}
+    .item a{ font-size:1.4rem; }
+    #correo{width: 85%;}
+}
+
+@media screen and (min-width: 37.5em){
+    header{
+        background-color: yellow;
+    }
+    .imgcategoria {height: 13rem;}
+    header figure{width: 8%;}
+    .item a{ font-size:1.5rem; }
+    main{
+        width: 90vw;
+        margin:auto;
+    }
+
+    .containerflex{
+        display:-webkit-box;
+        display:-ms-flexbox;
+        display:flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin:1rem 0;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .paraheader{margin:0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;}
+    .itemflex{-ms-flex-negative: 0;flex-shrink: 0;}
+    .itemflexheader{margin-right: auto;}
+    figure{
+        width: 40%;
+        max-width: 40%;
+        margin: 1rem 1rem;
+    }
+    footer figure{max-width: 5%;}
+    .otrasfigures{
+        margin:auto;
+        width: 40%;
+        max-width: 40%;
+    }
+
+    .item{
+        display: inline-block;
+        /*border: thin solid #FF5700;*/
+        padding: 0 0.5rem;
+    }
+    
+    iframe{
+        width: 22rem;
+        height: 12rem;
+    }
+}
+
+@media screen and (min-width: 48em){
+    header{
+        background-color: cyan;
+    }
+    .containergrid{
+        display:grid;
+        grid-template-columns: 1fr 4fr;
+        grid-template-areas: "navegacio contenido";
+    }
+    .itemgrid1{
+        grid-area: navegacio;
+    }
+    .itemgrid2{grid-area: contenido;}
+    header figure{width: 6%;}
+
+    .portada figure{max-width: 25%;}
+
+    .imgcategoria {height: 13rem;}
+    .navegacionapoyo{margin-top: 1.3rem;}
+
+    .navegacionapoyo ul{
+        display: inline-block;
+        border:0;
+    }
+    .navegacionapoyo li{
+        float: initial;
+        list-style: none;
+        text-align: left;
+    }
+    
+    iframe{
+        width: 25rem;
+        height: 14rem;
+    }
+    form{width: 50%;}
+    #correo{width: 85%;}
+}
+
+@media screen and (min-width: 64em){
+    header{
+        background-color: rgb(43, 255, 0);
+    }
+    figure{
+        width: 25%;
+        max-width: 25%;
+    }
+    header figure{width: 5%;}
+    footer p{font-size: 1rem;}
+    footer figure{max-width: 4%;}
+    .portada figure{max-width: 20%;}
+    iframe{
+        width: 30rem;
+        height: 17rem;
+    }
+    form{width: 40%;}
+    .especial{
+        width: 80vw;
+        margin:auto;
+    }
+}
+
+@media screen and (min-width: 75em){
+    header{
+        background-color: #ff0000;
+        height: 4rem;
+    }
+    .item a{ font-size:1.6rem; }
+    /*
+    .navegacionapoyo{
+        position: fixed;
+        top:4.5rem;
+    }
+    */
+    footer figure{ max-width: 5%;
+    }
+    header figure{width: 4%;}
+    footer figure{max-width: 3%;}
+    .portada figure{max-width: 15%;}
+    iframe{
+        width: 35rem;
+        height: 20rem;
+    }
+    .containergrid{
+        grid-template-columns: 1fr 5fr;
+    }
+    form{width: 35%;}
+}
+
+/*# sourceMappingURL=/styles.8986bff4.css.map */
